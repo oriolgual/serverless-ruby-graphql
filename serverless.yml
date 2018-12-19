@@ -1,0 +1,27 @@
+service: serverless-ruby-graphql
+
+provider:
+  name: aws
+  runtime: ruby2.5
+  region: eu-west-1
+  stage: dev
+
+functions:
+  api:
+    handler: app.request
+    events:
+      - http:
+          path: api
+          method: post
+
+plugins:
+  - serverless-hooks-plugin
+
+custom:
+  hooks:
+    package:initialize:
+      - bundle install --deployment
+    deploy:finalize:
+      - rm -fr .bundle
+      - rm -fr vendor
+      - bundle install

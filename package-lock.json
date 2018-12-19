@@ -1,0 +1,20 @@
+{
+  "name": "serverless-ruby-graphql",
+  "version": "0.1.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "serverless-hooks-plugin": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/serverless-hooks-plugin/-/serverless-hooks-plugin-1.1.0.tgz",
+      "integrity": "sha1-UL6hSGhbEQls7noIfN3LSd+o75k=",
+      "dev": true
+    },
+    "serverless-plugin-tracer": {
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/serverless-plugin-tracer/-/serverless-plugin-tracer-1.0.0.tgz",
+      "integrity": "sha512-Bdd0sUGElRgL1FqEMXuQB2AZJmdJGwUNk9ZkOe6DjmK0W8ZTemcIKFJ6+ufjMeNCuwsbTjJSnEhXX0aJUNx5jQ==",
+      "dev": true
+    }
+  }
+}

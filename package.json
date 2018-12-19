@@ -1,0 +1,10 @@
+{
+  "name": "serverless-ruby-graphql",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-hooks-plugin": "^1.1.0",
+    "serverless-plugin-tracer": "^1.0.0"
+  }
+}
