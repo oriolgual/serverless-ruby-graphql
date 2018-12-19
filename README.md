@@ -19,3 +19,10 @@ Clone this repo:
 
 1. Grab the endpoint of your function after deploying
 2. Run `curl -XPOST YOUR_LAMBDA_ENDPOINT -d '{post(id: 1) {id title}}'`
+
+
+## Code structure
+
+`app.rb` is the entry point of the application, it recieves the request handled from AWS and calls delegates everything to the schema.
+
+`app/` has a really simple demo GraphQL API.
