@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 ruby RUBY_VERSION
 
-gem "graphql"
+gem 'graphql'
 
 group :test do
   gem 'rspec'
