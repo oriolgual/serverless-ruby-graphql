@@ -14,14 +14,10 @@ functions:
           path: api
           method: post
 
-plugins:
-  - serverless-hooks-plugin
-
-custom:
-  hooks:
-    package:initialize:
-      - bundle install --deployment
-    deploy:finalize:
-      - rm -fr .bundle
-      - rm -fr vendor
-      - bundle install
+package:
+  exclude:
+    - '**'
+  include:
+    - app/**
+    - vendor/**
+    - '*.rb'

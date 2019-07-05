@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Post
   attr_reader :id, :title
 
@@ -21,8 +23,8 @@ class Post
 
   def self.all
     @all ||= [
-      Post.new(1, "First post"),
-      Post.new(2, "Second post")
+      Post.new(1, 'First post'),
+      Post.new(2, 'Second post')
     ]
   end
 end

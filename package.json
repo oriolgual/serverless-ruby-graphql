@@ -2,9 +2,20 @@
   "name": "serverless-ruby-graphql",
   "description": "",
   "version": "0.1.0",
-  "dependencies": {},
-  "devDependencies": {
-    "serverless-hooks-plugin": "^1.1.0",
-    "serverless-plugin-tracer": "^1.0.0"
+  "dependencies": {
+    "serverless": "^1.46.1"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oriolgual/serverless-ruby-graphql.git"
+  },
+  "scripts": {
+    "bundle:deployment": "docker run --rm -v ${PWD}:/var/task lambci/lambda:build-ruby2.5 gem install bundler:2.0.2 --no-document --quiet --silent && bundle install --deployment --without=test:development --quiet",
+    "bundle:development": "rm -fr vendor && rm -fr .bundle && bundle install --quiet",
+    "deploy": "npm run deploy:dev",
+    "deploy:dev": "npm run bundle:deployment && npx sls deploy -s dev && npm run bundle:development ",
+    "invoke:local": "npx sls invoke local"
   }
 }

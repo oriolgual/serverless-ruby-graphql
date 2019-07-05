@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  serverless-ruby: codegram/serverless-ruby@0.0.3
+
+workflows:
+  main:
+    jobs:
+      - serverless-ruby/test
+      - serverless-ruby/deploy:
+          requires:
+            - serverless-ruby/test
+          filters:
+            branches:
+              only: master
