@@ -1,6 +1,6 @@
 # Ruby GraphQL API on AWS Lambda [![CircleCI](https://circleci.com/gh/oriolgual/serverless-ruby-graphql.svg?style=svg)](https://circleci.com/gh/oriolgual/serverless-ruby-graphql)
 
-An example of how to build a GraphQL API with Ruby on AWS Lambda without Sinatra or Rails.
+An example of how to build a GraphQL API with Ruby on AWS Lambda without Sinatra or Rails. Read the [companion blogpost](https://www.codegram.com/blog/ruby-lambda-bff).
 
 ## 🛠 Installation
 
