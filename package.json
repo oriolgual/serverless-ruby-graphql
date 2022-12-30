@@ -3,7 +3,7 @@
   "description": "",
   "version": "0.1.0",
   "dependencies": {
-    "serverless": "^1.46.1"
+    "serverless": "^1.83.3"
   },
   "devDependencies": {},
   "license": "MIT",
